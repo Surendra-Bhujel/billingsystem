@@ -4,11 +4,11 @@
 
 ## Features 
 
-Customer ko detail record {name, house number, kati electricity use garyo}
-Should be able to provide the units consumed
-Unit slabs anusar kaam garnu parxha
-20 unit vanda mathi ko discuss garnu parni xha
-Bill calculate garnu parni xha for every customer  (unit slab use garera)
-Bill pani dekhaua parni xa
-Highest paying customer with house number [paid amount dekhauda thik hunthyo??]
+- Customer ko detail record {name, house number, kati electricity use garyo}
+- Should be able to provide the units consumed
+- Unit slabs anusar kaam garnu parxha
+- 20 unit vanda mathi ko discuss garnu parni xha
+- Bill calculate garnu parni xha for every customer  (unit slab use garera)
+- Bill pani dekhaua parni xa
+- Highest paying customer with house number [paid amount dekhauda thik hunthyo??]
 
