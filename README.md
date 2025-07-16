@@ -4,11 +4,18 @@
 
 ## Features 
 
-- Customer ko detail record {name, house number, kati electricity use garyo}
-- Should be able to provide the units consumed
-- Unit slabs anusar kaam garnu parxha
-- 20 unit vanda mathi ko discuss garnu parni xha
-- Bill calculate garnu parni xha for every customer  (unit slab use garera)
-- Bill pani dekhaua parni xa
-- Highest paying customer with house number [paid amount dekhauda thik hunthyo??]
+- Customer detail record should include: {name, house number, and units of electricity used}
+
+-Should be able to input the units consumed
+
+-Must work according to unit slabs
+
+-Usage above 20 units must be handled with correct slab breakdown
+
+-Bill must be calculated for every customer (using slab rates)
+
+-The bill amount must be displayed
+
+-The highest paying customer along with their house number and amount paid should be shown (Yes, showing the paid amount is appropriate)
+
 
