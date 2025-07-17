@@ -1,4 +1,7 @@
+package View;
+
 import java.util.Scanner;
+
 
 public class BillingApp {
     public static void main(String[] args) {
