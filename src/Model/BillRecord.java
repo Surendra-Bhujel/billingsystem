@@ -1,60 +1,59 @@
-import java.time.LocalDate;
-import java.util.ArrayList;
+package Model;
+
+import java.sql.Date;
 
 public class BillRecord {
-    private static ArrayList<BillRecord> billRecordsList = new ArrayList<>();
-    //customer ko details {customer details, bill amount, billing date}
-    private Customer customer;
-    private double billAmount;
-    //TODO jaile record add hunxa teti bela ko date chainxa
-    private LocalDate billingDate;
-    public BillRecord(){
+    private  String billId;
+    private  String customerId;
+    private  int unitUsed;
+    private  double billAmount;
+    private  Date billingDate;
 
-    }
-    public BillRecord(Customer customer, double billAmount){
-        this.customer = customer;
+    public BillRecord(String billId, String customerId, int unitUsed, double billAmount, Date billingDate){
+        this.billId = billId;
+        this.customerId = customerId;
         this.billAmount = billAmount;
-        this.billingDate = LocalDate.now();
-    }
-    //add a customer bill record
-    public static boolean addBillRecord(BillRecord billRecord){
-        boolean isRecordAdded = false;
-        if(billRecordsList.add(billRecord)){
-            isRecordAdded = true;
-        }
-        return isRecordAdded;
+        this.unitUsed = unitUsed;
+        this.billingDate = billingDate;
     }
 
+    public String getBillId() {
+        return billId;
+    }
 
-    public Customer getCustomer() {
-        return customer;
+    public void setBillId(String billId) {
+        this.billId = billId;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+    public int getUnitUsed() {
+        return unitUsed;
+    }
+
+    public void setUnitUsed(int unitUsed) {
+        this.unitUsed = unitUsed;
     }
 
     public double getBillAmount() {
         return billAmount;
     }
 
+    public void setBillAmount(double billAmount) {
+        this.billAmount = billAmount;
+    }
 
-    public LocalDate getBillingDate() {
+    public Date getBillingDate() {
         return billingDate;
     }
 
-    //TODO print the bill
-    public void printBill(){
-
-    }
-    //show highest paying customer
-    public static BillRecord showHighestPayingCustomer(){
-        BillRecord maxBillRecord = null;
-        double maxBillAmount = 0;
-        double billAmount = 0;
-        for(BillRecord billRecord: billRecordsList){
-            billAmount = billRecord.getBillAmount();
-            if(maxBillAmount < billAmount){
-                maxBillAmount = billAmount;
-                maxBillRecord = billRecord;
-            }
-        }
-        return maxBillRecord;
+    public void setBillingDate(Date billingDate) {
+        this.billingDate = billingDate;
     }
 }

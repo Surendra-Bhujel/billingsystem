@@ -15,7 +15,7 @@
 
 ## Features 
 
-- Customer detail record should include: {name, house number, and units of electricity used}
+-Model.Customer detail record should include: {name, house number, and units of electricity used}
 
 -Should be able to input the units consumed
 
